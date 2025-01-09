@@ -1,0 +1,21 @@
+.flex {
+  display: flex;
+  height: 65px;
+  align-items: center;
+
+  input {
+    flex: 1;
+    font-size: 20px;
+    outline: none;
+    padding: 0 20px;
+    width: 0;
+  }
+
+  .button {
+    border-radius: 65px !important;
+  }
+}
+
+.paper {
+  border-radius: 65px !important;
+}

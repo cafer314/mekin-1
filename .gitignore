@@ -1,0 +1,44 @@
+# Nuxt build files and folders
+.nuxt/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+
+# Environment files
+.env
+.env.*.local
+
+# IDE and Editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# npm cache and lock files
+package-lock.json
+yarn.lock
+
+# Firebase specific
+firebase-debug.log
+.firebaserc
+
+# Linting cache
+eslintcache
+
+# Local build tools
+.nitro/
+output/
+
+# Others
+*.local
+
+.output

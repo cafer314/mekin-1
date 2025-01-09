@@ -1,0 +1,209 @@
+.footer {
+  text-align: center;
+  padding-bottom: $spacing5;
+  // margin-top: $spacing20;
+  position: relative;
+  padding-top: 80px;
+
+  @include breakpoints-down(md) {
+    margin-top: $spacing10
+  }
+}
+
+.logo {
+  @include palette-text-secondary;
+  margin-bottom: $spacing5;
+
+  @include breakpoints-down(md) {
+    margin-top: $spacing5
+  }
+
+  img {
+    width: 80px;
+  }
+
+  h4 {
+    text-transform: uppercase
+  }
+}
+
+.margin {
+  margin: $spacing2
+}
+
+.socmed {
+  margin: spacing(4, 0);
+
+  button {
+    @include use-theme(background, $palette-primary-light, $palette-primary-dark);
+    margin: $spacing1;
+
+    i {
+      @include use-theme(color, $palette-primary-dark, $palette-primary-light);
+    }
+  }
+
+  i {
+    position: relative;
+    @include left(-2px);
+    top: 1px;
+    font-size: 24px
+  }
+}
+
+.contact {
+  @include palette-text-secondary;
+}
+
+.divider {
+  margin: 12px;
+  border: none;
+  background: none
+}
+
+.form-wrap {
+  position: relative
+}
+
+.form-box {
+  padding: $spacing2;
+
+  @include breakpoints-up(sm) {
+    padding: $spacing7
+  }
+
+  @include breakpoints-down(xs) {
+    padding: spacing(4, 2)
+  }
+
+}
+
+.title-main {
+  @include text-align(left);
+  @include use-theme(color, $palette-primary-dark, $palette-primary-light);
+}
+
+.input {
+  width: 100%;
+  margin-bottom: $spacing5;
+
+  @include breakpoints-down(xs) {
+    margin-bottom: $spacing3
+  }
+}
+
+.form {
+  @include text-align(left);
+  position: relative;
+}
+
+.btn-area {
+  display: flex;
+  justify-content: space-between;
+  margin: spacing(0, 0, 3);
+
+  @include breakpoints-up(sm) {
+    margin: spacing(3, 0, 0)
+  }
+
+  @include breakpoints-down(xs) {
+    .v-btn {
+      width: 100%
+    }
+  }
+}
+
+
+.bottom-deco {
+  width: 100%;
+  left: 0
+}
+
+.bottom-deco,
+.left-deco {
+  position: absolute;
+  bottom: 0
+}
+
+.left-deco {
+  width: 145px
+}
+
+[dir=ltr] .left-deco {
+  left: -30px
+}
+
+[dir=rtl] .left-deco {
+  right: -30px
+}
+
+.v-application--is-rtl .left-deco {
+  transform: scaleX(-1)
+}
+
+.left-deco img {
+  display: block;
+  width: 100%
+}
+
+.right-deco {
+  position: absolute;
+  width: 118px;
+  bottom: 0;
+  right: 0;
+}
+
+[dir=ltr] .right-deco {
+  right: -20px
+}
+
+[dir=rtl] .right-deco {
+  left: -20px
+}
+
+.right-deco img {
+  display: block;
+  width: 100%
+}
+
+.top-deco {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 80px;
+  background: var(--v-primarydark-base)
+}
+
+
+.top-deco:before {
+  content: "";
+  border-radius: 80px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .73;
+  background: #fff
+}
+
+.top-deco img {
+  transform: rotate(10deg);
+  position: relative;
+  top: -120px;
+  left: 60px;
+  display: block;
+  width: 460px
+}
+
+@media(max-width:1279px) {
+  .top-deco img {
+    width: 360px
+  }
+}
+
+@media(max-width:599px) {
+  .top-deco img {
+    display: none
+  }
+}

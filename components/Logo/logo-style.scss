@@ -1,0 +1,32 @@
+.logo {
+  font-size: 24px;
+  font-weight: $font-bold;
+  @include palette-text-primary;
+  display: flex;
+
+  svg {
+    transition: all 0.3s ease;
+    width: 54px;
+    height: 54px;
+  }
+}
+
+.landscape {
+  align-items: center;
+  position: relative;
+  top: -2px;
+
+  svg {
+    @include margin-right($spacing1)
+  }
+}
+
+.portrait {
+  display: block;
+  margin: 0 auto 8px;
+
+  svg {
+    margin: 0 auto $spacing1;
+    display: block;
+  }
+}
