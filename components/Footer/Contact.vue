@@ -54,16 +54,16 @@
               <p class="use-text-paragraph">
                 {{ $t('common.blog_phone') }}
                 <br />
-                <span dir="ltr">+966 011 279 0012</span>
+                <span dir="ltr">   </span>
               </p>
               <v-divider class="divider my-3" />
               <p class="use-text-paragraph">
                 {{ $t('common.blog_email') }}
-                <br />info@baban.sa
+                <br />takyon16@gmail.com
               </p>
             </div>
             <p class="body-2 mt-5 text-center">
-              &copy;&nbsp;
+              &nbsp;
               {{ brand.starter.footerText }}
             </p>
           </v-col>
