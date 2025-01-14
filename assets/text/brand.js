@@ -1,6 +1,6 @@
 const brand = {
   starter: {
-    name: "جيل كالصحابة",
+    name: "مكين",
     desc: "Awrora Starter Template",
     prefix: "awrora",
     footerText: "E-Learn All Rights Reserved 2020",
